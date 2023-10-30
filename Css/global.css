@@ -45,3 +45,7 @@ img {
     max-width: initial !important;
   }
 }
+
+a {
+  text-decoration: none;
+}

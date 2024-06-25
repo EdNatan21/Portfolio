@@ -1,20 +1,23 @@
 @font-face {
-  font-family: "Fira Sans";
+  font-family: 'Fira Sans';
   src: url(../Fira_Sans/FiraSans-Regular.ttf) format('truetype');
 }
 
 @font-face {
-  font-family: "Fira Sans - Bold";
+  font-family: 'Fira Sans - Bold';
   src: url(../Fira_Sans/FiraSans-Bold.ttf) format('truetype');
 }
 
 body {
   margin: 0px;
-  font-family: "Fira Sans", Arial, sans-serif;
+  font-family: 'Fira Sans', Arial, sans-serif;
   color: #141414;
 }
 
-h1, h2, h3, p {
+h1,
+h2,
+h3,
+p {
   margin: 0px;
 }
 
@@ -48,4 +51,18 @@ img {
 
 a {
   text-decoration: none;
+}
+
+.animeLeft {
+  opacity: 0;
+  filter: blur(10px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+
+.animeLeft-on {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+  transition: all 1s;
 }
